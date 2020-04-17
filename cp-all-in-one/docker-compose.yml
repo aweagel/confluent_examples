@@ -108,8 +108,8 @@ services:
       PORT: 9021
 
   ksql-server:
-    context:
-      build: ksql-server
+    build:
+      context: ./ksql-server
     hostname: ksql-server
     container_name: ksql-server
     depends_on:
